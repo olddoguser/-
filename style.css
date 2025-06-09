@@ -1,0 +1,1973 @@
+@charset "utf-8";
+/* 样式重置 */
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+em,
+i,
+a,
+input,
+div,
+img,
+strong,
+b,
+form,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: "宋体";
+}
+
+img {
+    border: 0 none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f60;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+strong,
+b {
+    font-weight: 500;
+}
+
+.clearFix {
+    width: 950px;
+    *zoom: 1;
+    margin: 0 auto;
+}
+
+.clearFix:after {
+    content: "";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+
+.top {
+    height: 30px;
+    background: url(../images/topBg.jpg) repeat-x;
+}
+
+.topAll {
+    line-height: 30px;
+}
+
+.topAll span {
+    color: #000;
+    float: left;
+}
+
+.topAll span a {
+    color: #404040;
+}
+
+.topAll ul {
+    float: right;
+    z-index: 80;
+}
+
+.topAll ul li {
+    float: left;
+    color: #cacaca;
+    padding: 0 0px 0 8px;
+    text-align: center;
+    position: relative;
+    *z-index: 80;
+}
+
+.topAll ul li a {
+    color: #404040;
+    margin-right: 8px;
+}
+
+.topAll ul li a em {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/topLit.jpg) no-repeat;
+    overflow: hidden;
+    float: left;
+    margin-top: 8px;
+    margin-right: 3px;
+}
+
+.topAll ul li i {
+    display: block;
+    width: 7px;
+    height: 4px;
+    background: url(../images/topLit.jpg) no-repeat 0 -58px;
+    overflow: hidden;
+    position: absolute;
+    right: -3px;
+    top: 12px;
+}
+
+.topAll ul li.tao {
+    width: 90px;
+}
+
+.topAll ul li.tao a {
+    margin-right: 15px;
+}
+
+.topAll ul li.tao i {
+    right: 15px;
+}
+
+.topAll ul li.buy em {
+    background-position: 0 -15px;
+}
+
+.topAll ul li.save em {
+    background-position: 0 -29px;
+}
+
+.topAll ul li.help em {
+    background-position: 0 -43px;
+}
+
+.topAll ul li ul {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    width: 90px;
+    border: 1px solid #dcdcdc;
+    height: auto;
+    background: #fff;
+    z-index: 99;
+    display: none;
+}
+
+.topAll ul li ul li {
+    width: 90px;
+    line-height: 26px;
+    padding: 0;
+}
+
+.topAll ul li ul li a {
+    display: block;
+    text-align: center;
+    color: #404040;
+    margin-right: 0;
+    width: 90px;
+}
+
+.topAll ul li ul li a:hover {
+    background: #666;
+    color: #fff;
+}
+
+.topAll ul li.buy ul {
+    width: 200px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    left: -7px;
+}
+
+.topAll ul li.buy ul li {
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    color: #404040;
+}
+
+.nav {
+    height: auto;
+    overflow: hidden;
+}
+
+.nav .navLeft {
+    width: 330px;
+    height: 80px;
+    float: left;
+    background: url(../images/logo.jpg) no-repeat;
+}
+
+.nav .navRight {
+    width: 595px;
+    height: 68px;
+    float: right;
+    padding-left: 23px;
+    padding-top: 12px;
+    position: relative;
+}
+
+.nav .navRight ul {
+    line-height: 25px;
+    position: absolute;
+    z-index: 90;
+}
+
+.nav .navRight ul li {
+    float: left;
+    color: #d3d3d3;
+    margin-left: 5px;
+    text-align: center;
+    *width: 75px;
+    _margin-left: 3px;
+}
+
+.nav .navRight ul li b {
+    margin: 0 0px 0px 10px;
+    *display: none;
+}
+
+.nav .navRight ul li a {
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px 0 17px;
+    height: 25px;
+    color: #153779;
+    float: left;
+}
+
+.nav .navRight ul li span {
+    display: block;
+    width: 6px;
+    height: 25px;
+    background: url(../images/seachLi.gif) no-repeat 0 -25px;
+    float: left;
+    margin-right: -6px;
+    display: none;
+}
+
+.nav .navRight ul li.current a {
+    background: url(../images/seachLi.gif) no-repeat;
+}
+
+.nav .navRight ul li.current span {
+    display: block;
+}
+
+.nav .navRight form {
+    width: 531px;
+    height: 43px;
+    background: url(../images/seachBgjpg.jpg) no-repeat;
+    overflow: hidden;
+    position: absolute;
+    bottom: 2px;
+    left: 28px;
+    z-index: 80;
+    _left: 29px;
+}
+
+.nav .navRight form input {
+    border: 0 none;
+    background: none;
+    margin-top: 9px;
+}
+
+.nav .navRight form input.text {
+    width: 377px;
+    height: 13px;
+    line-height: 13px;
+    margin-left: 7px;
+    padding: 7px 3px;
+    color: #cdcdcd;
+    float: left;
+}
+
+.nav .navRight form input.textCur {
+    color: #000;
+}
+
+.nav .navRight form input.submit {
+    float: left;
+    width: 134px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav .navRight .else {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+}
+
+.nav .navRight .else ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+.nav .navRight .else ul li a:hover {
+    background: none;
+    color: #000;
+}
+
+.main {
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main .mainContent {
+    overflow: hidden;
+}
+
+.main .mainContent .left {
+    width: 203px;
+    height: 704px;
+    float: left;
+}
+
+.main .mainContent .left .leftTop {
+    width: 186px;
+    height: 460px;
+    background: url(../images/mainleftBg.jpg) no-repeat;
+    padding: 11px 0 0 17px;
+}
+
+.main .mainContent .left .leftTop .fashion {
+    width: 140px;
+    overflow: hidden;
+}
+
+.main .mainContent .left .leftTop .fashion .fashionPic {
+    width: 40px;
+    border: 1px solid #b2c2d2;
+    background: #fff;
+    padding: 2px;
+    float: left;
+}
+
+.main .mainContent .left .leftTop .fashion .fashionInfo {
+    float: left;
+    margin-left: 8px;
+    display: inline;
+}
+
+.main .mainContent .left .leftTop .fashion .fashionInfo span {
+    color: #7d7d7d;
+}
+
+.main .mainContent .left .leftTop .fashion .fashionInfo p {
+    line-height: 16px;
+}
+
+.main .mainContent .left .leftTop .fashion .fashionInfo p em {
+    width: 14px;
+    height: 11px;
+    background: url(../images/mainLitile2.jpg) no-repeat;
+    overflow: hidden;
+    padding-left: 18px;
+    color: #ff6600;
+}
+
+.main .mainContent .left .leftTop .fashion .fashionInfo p a {
+    text-decoration: underline;
+    color: #0883c4;
+}
+
+.main .mainContent .left .leftTop ul {
+    margin-top: 22px;
+    margin-left: 6px;
+}
+
+.main .mainContent .left .leftTop ul li {
+    line-height: 30px;
+}
+
+.main .mainContent .left .leftTop ul li a {
+    color: #3e3e3e;
+    font-size: 14px;
+}
+
+.main .mainContent .left .leftTop ul li a em {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/Mainlitile.jpg) no-repeat;
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+    padding-left: 0;
+}
+
+.main .mainContent .left .leftBottom {
+    width: 198px;
+    border: 1px solid #d5d5d5;
+    padding-bottom: 2px;
+    margin-top: 6px;
+}
+
+.main .mainContent .left .leftBottom h3 {
+    width: 189px;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    position: relative;
+    padding-left: 7px;
+}
+
+.main .mainContent .left .leftBottom h3 img {
+    position: absolute;
+    top: 9px;
+    left: 44px;
+}
+
+.main .mainContent .left .leftBottom .leftTab {
+    width: 198px;
+    height: auto;
+    border-top: 1px solid #d5d5d5;
+    overflow: hidden;
+}
+
+.main .mainContent .left .leftBottom .leftTab ul {
+    width: 210px;
+    margin-top: 1px;
+    overflow: hidden;
+}
+
+.main .mainContent .left .leftBottom .leftTab ul li {
+    float: left;
+}
+
+.main .mainContent .left .leftBottom .leftTab ul li a {
+    display: block;
+    padding: 7px 8px;
+    background: #27a6e4;
+    margin-right: 1px;
+    color: #fff;
+}
+
+.main .mainContent .left .leftBottom .leftTab ul li a:hover,
+.main .mainContent leftTab .leftTab ul li.cityCur a {
+    color: #000;
+    background: #fff;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews {
+    margin-top: 12px;
+    float: left;
+    display: none;
+}
+
+.main .mainContent .left .leftBottom .leftTab .first {
+    display: block;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsPic {
+    width: 196px;
+    height: 65px;
+    background: url(../images/tabBg.jpg) no-repeat;
+    position: relative;
+}
+
+.NewsLeft,
+.NewsRight {
+    display: inline-block;
+    width: 4px;
+    height: 7px;
+    background: url(../images/tab.jpg) no-repeat;
+    cursor: pointer;
+    margin-top: 28px;
+    display: inline;
+    overflow: hidden;
+}
+
+.NewsLeft {
+    float: left;
+    margin-left: 8px;
+}
+
+.NewsRight {
+    background-position: 0 -7px;
+    float: right;
+    margin-right: 8px;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsPic ul {
+    width: 164px;
+    height: 65px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 4px;
+    display: inline;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsPic ul li {
+    width: 164px;
+    height: 65px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    display: none;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsPic ul li.ImgDisplay {
+    display: block;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsPic ul li a {
+    padding: 0;
+    margin: 0;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsInfo p {
+    margin: 6px 10px;
+    color: #939393;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.main .mainContent .left .leftBottom .leftTab .leftTabNews .NewsInfo p a {
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background: url(../images/mainLitile2.jpg) no-repeat 0 -34px;
+}
+
+.main .mainContent .middle {
+    width: 473px;
+    height: auto;
+    float: left;
+    margin-left: 7px;
+    display: inline;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mTitle {
+    background: #ededed;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .mainContent .middle .mTitle i {
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    border: 1px solid #909090;
+    border-top: 4px solid #767676;
+    background: #9e9e9e;
+    color: #fff;
+    text-align: center;
+    line-height: 16px;
+}
+
+.main .mainContent .middle .mTitle b {
+    display: inline-block;
+    background: url(../images/mainLitile2.jpg) no-repeat 0 -14px;
+    width: 9px;
+    height: 9px;
+    margin: 0 4px 0 6px;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mTitle span {
+    color: #777;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: '宋体';
+}
+
+.main .mainContent .middle .mTitle em {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    font-size: 11px;
+    color: #bcbcbc;
+}
+
+.main .mainContent .middle .mTitle em a {
+    display: inline-block;
+    width: 6px;
+    height: 5px;
+    background: url(../images/mainLitile2.jpg) no-repeat 0 -26px;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mBanner {
+    width: 473px;
+    height: auto;
+    background: url(../images/middlePicBg.jpg) no-repeat;
+    margin-top: 10px;
+    padding-top: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mBanner ul {
+    width: 461px;
+    height: 267px;
+    margin: 0px 8px 8px 4px;
+    position: relative;
+}
+
+.main .mainContent .middle .mBanner ul li {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main .mainContent .middle .mBanner .bigPic {
+    width: 461px;
+    height: 86px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#AA000000', endColorstr='#AA000000');
+    background: rgba(0, 0, 0, 0.67);
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    display: none;
+    bottom: 0\9;
+    *bottom: 2px;
+    _bottom: 3px;
+}
+
+#box {
+    overflow: hidden;
+}
+
+#box li {
+    display: none;
+}
+
+#box li.boxCur {
+    display: block;
+}
+
+.main .mainContent .middle .mBanner .bigPicT {
+    width: 452px;
+    line-height: 22px;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#C60EA8F8', endColorstr='#C60EA8F8');
+    background: rgba(14, 168, 248, 0.78);
+    color: #fff;
+    padding-left: 9px;
+}
+
+.main .mainContent .middle .mBanner .bigPicT span {
+    display: block;
+    float: left;
+    width: 4px;
+    height: 13px;
+    background: #fff;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.main .mainContent .middle .mBanner .bigPicT h3 {
+    font-size: 14px;
+}
+
+.main .mainContent .middle .mBanner .bigPic p {
+    line-height: 18px;
+    color: #fff;
+    margin: 7px 12px 9px 9px;
+    _margin-bottom: 0;
+}
+
+.main .mainContent .middle .mBanner .smallPic {
+    width: 471px;
+    height: auto;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallContent {
+    width: 439px;
+    float: left;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallContent ul {
+    width: 447px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallContent ul li {
+    position: relative;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallContent ul li.oldsmall a {
+    display: block;
+    width: 41px;
+    height: auto;
+    border: 1px solid #dedede;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallContent ul li.oldsmall a img {
+    display: block;
+    border: 1px solid #fff;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallContent ul li.smallCur a {
+    display: block;
+    width: 41px;
+    height: auto;
+    border: 4px solid #f60;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallLeft {
+    float: left;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallLeft,
+.main .mainContent .middle .mBanner .smallPic .smallRight {
+    width: 16px;
+    height: 42px;
+    background: url(../images/smallBg.jpg) no-repeat;
+    position: relative;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallRight {
+    background-position: -16px 0;
+    float: right;
+    _margin-top: -48px;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallLeft a {
+    left: 9px;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallLeft a,
+.main .mainContent .middle .mBanner .smallPic .smallRight a {
+    display: block;
+    width: 4px;
+    height: 7px;
+    background: url(../images/tab.jpg) no-repeat;
+    position: absolute;
+    top: 16px;
+    overflow: hidden;
+}
+
+.main .mainContent .middle .mBanner .smallPic .smallRight a {
+    background-position: 0 -7px;
+    right: 10px;
+}
+
+.main .middleTab {
+    width: 468px;
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    border: 1px solid #d3d3d4;
+}
+
+.main .middleTab ul {
+    width: 470px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.main .middleTab ul li {
+    width: 93px;
+    line-height: 26px;
+    float: left;
+    margin-right: 1px;
+    text-align: center;
+}
+
+.main .middleTab ul li a {
+    display: block;
+    font-size: 13px;
+    background: #f3f3f3;
+    color: #3d3423;
+}
+
+.main .middleTab ul li a:hover,
+.main .middleTab ul li.tabTwoCur a {
+    background: #f60;
+    color: #fff;
+}
+
+.main .middleTab .middleNews {
+    border-top: 1px solid #d5d5d6;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce9ed;
+    display: none;
+}
+
+.main .middleTab .firstTwo {
+    display: block;
+}
+
+.main .middleTab .middleNews ul {
+    width: 470px;
+    overflow: hidden;
+    border: 0 none;
+}
+
+.main .middleTab .middleNews ul li {
+    width: 225px;
+    height: 95px;
+    margin: 12px 0 0 10px;
+    float: left;
+    _margin-left: 5px;
+}
+
+.main .middleTab .middleNews ul li img {
+    float: left;
+}
+
+.main .middleTab .middleNews ul li .news {
+    width: 144px;
+    float: left;
+    text-align: left;
+    margin-left: 8px;
+    display: inline;
+}
+
+.main .middleTab .middleNews ul li .news h3 a {
+    font-size: 14px;
+    color: #303030;
+    background: none;
+}
+
+.main .middleTab .middleNews ul li .news h3 a:hover {
+    color: #f60;
+}
+
+.main .middleTab .middleNews ul li .news p {
+    color: #939393;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.main .middleTab .middleNews ul li .news p a {
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background: url(../images/mainLitile2.jpg) no-repeat 0 -34px;
+}
+
+.main .middleTab .elseNews {
+    width: 468px;
+    padding: 3px 0px 3px 0px;
+    height: auto;
+}
+
+.main .middleTab .elseNews ul {
+    padding-left: 20px;
+    width: 448px;
+    border: 0 none;
+}
+
+.main .middleTab .elseNews ul li {
+    line-height: 22px;
+    width: 224px;
+    margin: 0;
+    text-align: left;
+    list-style: square;
+}
+
+.main .middleTab .elseNews ul li a {
+    display: inline;
+    font-size: 13px;
+    color: #333;
+    background: none;
+}
+
+.main .middleTab .elseNews ul li a:hover {
+    width: auto;
+    background: none;
+    color: #f60;
+}
+
+.main .mainContent .right {
+    width: 260px;
+    height: auto;
+    float: left;
+    margin-left: 7px;
+    display: inline;
+}
+
+.main .mainContent .right form {
+    width: 255px;
+    height: 21px;
+    background: url(../images/seachBg2.jpg) no-repeat;
+}
+
+.main .mainContent .right form input {
+    border: 0 none;
+    background: none;
+}
+
+.main .mainContent .right form input.Rtext {
+    width: 189px;
+    line-height: 15px;
+    color: #d8d8d8;
+    float: left;
+    padding: 2px 4px;
+}
+
+.main .mainContent .right form input.Rsubmit {
+    width: 55px;
+    text-align: center;
+    line-height: 19px;
+    color: #d9d9d9;
+    float: right;
+    font-weight: bold;
+    scursor: pointer;
+}
+
+.main .mainContent .right .Rread {
+    width: 259px;
+    height: 254px;
+    background: url(../images/orderBg.jpg) no-repeat;
+    overflow: hidden;
+    padding-top: 11px;
+    margin-top: 4px;
+}
+
+.main .mainContent .right .Rread .read {
+    margin-left: 7px;
+    overflow: hidden;
+}
+
+.main .mainContent .right .Rread .read img {
+    float: left;
+}
+
+.main .mainContent .right .Rread .read .readInfo {
+    width: 133px;
+    float: left;
+    padding: 24px 0 0 11px;
+    line-height: 24px;
+}
+
+.main .mainContent .right .Rread .read .readInfo p em {
+    color: #00acdd;
+}
+
+.main .mainContent .right .Rread .read .readInfo p i {
+    color: #907854;
+}
+
+.main .mainContent .right .Rread .read .readInfo p b {
+    color: #fb5614;
+}
+
+.main .mainContent .right .Rread .read .readInfo p strong {
+    color: #585857;
+}
+
+.main .mainContent .right .Rread .read .readInfo span {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.main .mainContent .right .Rread .read .readInfo span a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/yugao.jpg) no-repeat;
+    float: right;
+    margin-right: 20px;
+    display: inline;
+    _margin-top: -32px;
+}
+
+.main .mainContent .right .Rread .readBuy {
+    width: 252px;
+    height: 81px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+}
+
+.main .mainContent .right .mianhot {
+    width: 257px;
+    height: auto;
+    padding-bottom: 10px;
+    border: 1px solid #d5d5d5;
+}
+
+.main .mainContent .right .mianhot h3 {
+    width: 248px;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    position: relative;
+    padding-left: 7px;
+    margin-bottom: 10px;
+}
+
+.main .mainContent .right .mianhot h3 img {
+    position: absolute;
+    top: 10px;
+    left: 48px;
+}
+
+.main .mainContent .right .mianhot a {
+    color: #27a6e4;
+}
+
+.main .mainContent .right .mianhot .hot {
+    padding: 0 10px;
+    line-height: 24px;
+}
+
+.main .mainContent .right .mainVote {
+    width: 257px;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 9px;
+    border: 1px solid #d5d5d5;
+}
+
+.main .mainContent .right .mainVote h3 {
+    width: 248px;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    position: relative;
+    padding-left: 7px;
+    margin-bottom: 3px;
+}
+
+.main .mainContent .right .mainVote h3 img {
+    position: absolute;
+    top: 10px;
+    left: 48px;
+}
+
+.main .mainContent .right .mainVote p {
+    margin-left: 6px;
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.main .mainContent .right .mainVote .vote {
+    width: 250px;
+    height: 78px;
+    margin-left: 3px;
+    overflow: hidden;
+}
+
+.main .mainContent .right .mainVote .vote ul {
+    overflow: hidden;
+}
+
+.main .mainContent .right .mainVote .vote ul li {
+    width: 121px;
+    height: 78px;
+    float: left;
+    color: #fff;
+    margin-left: 3px;
+    _margin-left: 0;
+}
+
+.main .mainContent .right .mainVote .vote ul li.search1 {
+    background: #000;
+}
+
+.main .mainContent .right .mainVote .vote ul li.search2 {
+    background: #ff5518;
+}
+
+.main .mainContent .right .mainVote .vote ul li img {
+    margin-bottom: 2px;
+    _margin-bottom: 0;
+}
+
+.main .mainContent .right .mainVote .vote ul li label {
+    line-height: 15px;
+}
+
+.main .mainContent .right .mainVote .vote ul li label input {
+    float: left;
+    margin: 0 4px;
+    *margin-top: -8px;
+    *float: none;
+    _margin-top: -6px;
+    _float: left;
+}
+
+.main .mainContent .right .mainVote .finish {
+    margin-top: 4px;
+    text-align: center;
+    margin-left: 4px;
+    width: 248px;
+    height: 25px;
+    background: #bfc0c0;
+    overflow: hidden;
+}
+
+.main .mainContent .right .mainVote .finish a {
+    display: block;
+    color: #000;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.main .mainContentTwo {
+    width: 950px;
+    margin-top: 5px;
+    overflow: hidden;
+    _position: relative;
+}
+
+.main .mainContentTwo .mTwoBanner {
+    width: 950px;
+    height: 100px;
+}
+
+.main .mainContentTwo .mTaoLeft {
+    width: 200px;
+    height: auto;
+    float: left;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople {
+    width: 198px;
+    border: 1px solid #d3d3d4;
+    margin-top: 10px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople h3 {
+    width: 189px;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    position: relative;
+    padding-left: 7px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople h3 img {
+    position: absolute;
+    top: 10px;
+    left: 48px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo {
+    width: 187px;
+    margin: 5px 5px 0px 7px;
+    overflow: hidden;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo img {
+    float: left;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo .information {
+    width: 112px;
+    padding-left: 6px;
+    float: left;
+    text-align: left;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo .information h3 {
+    background: none;
+    width: auto;
+    border: 0 none;
+    font-size: 13px;
+    color: #303030;
+    text-align: left;
+    padding-left: 0;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo .information p {
+    color: #939393;
+    line-height: 18px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo .information p a {
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background: url(../images/mainLitile2.jpg) no-repeat 0 -34px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo ul {
+    display: inline-block;
+    width: 174px;
+    border-bottom: 1px dashed #cfcfcf;
+    padding: 5px 0px 3px 14px;
+    margin-top: 4px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo ul li {
+    line-height: 22px;
+    list-style: square;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo ul li a {
+    color: #333;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .taoInfo ul li a:hover {
+    color: #f60;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .elseList {
+    width: 168px;
+    padding: 3px 0px 3px 20px;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .elseList li {
+    line-height: 22px;
+    list-style: square;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .elseList li a {
+    color: #333;
+}
+
+.main .mainContentTwo .mTaoLeft .taoPeople .elseList li a:hover {
+    color: #f60;
+}
+
+.main .mainContentTwo .mTaoLeft .taoworld h3 img {
+    left: 63px;
+}
+
+.main .mainContentTwo .mTaoMiddle {
+    width: 470px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.middleCon {
+    width: 465px;
+    height: auto;
+    padding-left: 5px;
+    padding-top: 10px;
+    overflow: hidden;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #c2c2c2;
+    border-top: 1px solid #dcdcdd;
+    display: none;
+}
+
+.firstThree {
+    display: block;
+}
+
+.middleCon .middleConleft {
+    float: left;
+    width: 120px;
+    padding-left: 3px;
+}
+
+.middleCon .middleConleft h3 {
+    color: #282828;
+    line-height: 25px;
+}
+
+.middleCon .middleConleft p {
+    color: #939393;
+}
+
+.middleCon .middleConright {
+    width: 318px;
+    float: left;
+    padding-left: 12px;
+}
+
+.middleCon .middleConright h1 {
+    font-size: 14px;
+    color: #ed6205;
+    line-height: 22px;
+}
+
+.middleCon .middleConright ul {
+    width: 298px;
+    padding-left: 20px;
+    border: 0 none;
+}
+
+.middleCon .middleConright ul li {
+    width: 298px;
+    float: none;
+    list-style: square;
+    text-align: left;
+    line-height: 22px;
+}
+
+.middleCon .middleConright ul li a {
+    display: inline;
+    font-size: 13px;
+    color: #191919;
+    background: none;
+    line-height: 22px;
+}
+
+.middleCon .middleConright ul li a:hover {
+    background: none;
+    color: #f60;
+}
+
+.mainMiddleConTwo,
+.mainMiddleConThree {
+    width: 468px;
+    height: auto;
+    overflow: hidden;
+    border-top: 1px solid #dcdcdd;
+    display: none;
+}
+
+.firstFour,
+.firstFive {
+    display: block;
+}
+
+.mainMiddleConTwo .middleConleftTwo {
+    width: 272px;
+    float: left;
+    overflow: hidden;
+}
+
+.mainMiddleConTwo .middleConleftTwo .middleConleft {
+    width: 120px;
+    float: left;
+    padding-left: 3px;
+    margin: 10px 4px 10px 8px;
+    overflow: hidden;
+    _margin-left: 4px;
+}
+
+.mainMiddleConTwo .middleConleftTwo .middleConleft h3 {
+    color: #282828;
+    line-height: 25px;
+}
+
+.mainMiddleConTwo .middleConleftTwo .middleConleft p {
+    color: #939393;
+}
+
+.mainMiddleConTwo .middleConleftTwo ul {
+    width: 247px;
+    padding: 8px 0px 4px 20px;
+    border: 0 none;
+    border-top: 1px dashed #dcdcdc;
+    margin-left: 5px;
+}
+
+.mainMiddleConTwo .middleConleftTwo ul li {
+    width: 247px;
+    float: none;
+    list-style: square;
+    text-align: left;
+    line-height: 21px;
+}
+
+.mainMiddleConTwo .middleConleftTwo ul li a {
+    display: inline;
+    font-size: 12px;
+    color: #575757;
+    background: none;
+}
+
+.mainMiddleConTwo .middleConleftTwo ul li a:hover {
+    background: none;
+    color: #f60;
+}
+
+.mainMiddleConTwo .middleConrightTwo {
+    width: 190px;
+    float: left;
+    margin-top: 10px;
+}
+
+.mainMiddleConTwo .middleConrightTwo ul {
+    width: 176px;
+    padding-left: 20px;
+    border: 0 none;
+}
+
+.mainMiddleConTwo .middleConrightTwo ul li {
+    width: 176px;
+    float: none;
+    list-style: square;
+    text-align: left;
+    line-height: 22px;
+}
+
+.mainMiddleConTwo .middleConrightTwo ul li a {
+    display: inline;
+    font-size: 12px;
+    color: #191919;
+    background: none;
+    line-height: 22px;
+}
+
+.mainMiddleConTwo .middleConrightTwo ul li a:hover {
+    background: none;
+    color: #f60;
+}
+
+.mainMiddleConThree .middleConleftThree {
+    width: 120px;
+    margin: 10px 0px 0px 8px;
+    float: left;
+}
+
+.mainMiddleConThree .middleConleftThree h3 {
+    color: #282828;
+    line-height: 25px;
+}
+
+.mainMiddleConThree .middleConleftThree p {
+    width: 105px;
+    padding: 8px 8px 6px 5px;
+    line-height: 20px;
+    color: #737373;
+    margin-top: 5px;
+    border: 1px solid #e3e9ec;
+    _padding-bottom: 0;
+}
+
+.mainMiddleConThree .middleConrightThree {
+    width: 328px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    _padding: 0;
+}
+
+.mainMiddleConThree .middleConrightThree h1 {
+    color: #ed6205;
+    font-size: 14px;
+    line-height: 22px;
+    _padding-left: 5px;
+}
+
+.mainMiddleConThree .middleConrightThree ul {
+    width: 318px;
+    border: 0 none;
+    padding-left: 10px;
+    _padding-left: 20px;
+    _width: 308px;
+}
+
+.mainMiddleConThree .middleConrightThree ul li {
+    width: 318px;
+    text-align: left;
+    line-height: 21px;
+    float: none;
+    background: none;
+    list-style: square;
+}
+
+.mainMiddleConThree .middleConrightThree ul li a {
+    background: none;
+    display: inline;
+    line-height: 22px;
+}
+
+.mainMiddleConThree .middleConrightThree ul li a:hover {
+    background: none;
+    color: #f60;
+}
+
+.main .mainContentTwo .mTaoRight {
+    width: 260px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    margin-left: 10px;
+    _position: absolute;
+    _right: 0;
+    _top: 100px;
+}
+
+.video,
+.ranking {
+    margin-top: 10px;
+    border: 1px solid #d3d3d4;
+    background: #f3f3f3
+}
+
+.video h3,
+.ranking h3 {
+    width: 249px;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    position: relative;
+    padding-left: 7px;
+}
+
+.video h3 img {
+    position: absolute;
+    left: 47px;
+    top: 10px;
+}
+
+.video .flash {
+    width: 247px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.ranking h3 img {
+    position: absolute;
+    top: 10px;
+    left: 67px;
+}
+
+.ranking li a {
+    display: block;
+    width: 255px;
+    height: 32px;
+    border-bottom: 1px solid #ffffff;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.ranking li a em {
+    display: block;
+    width: 53px;
+    height: 32px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    float: left;
+    font-size: 12px;
+    color: #343434;
+    overflow: hidden;
+}
+
+.ranking li a .rankimg {
+    display: none;
+}
+
+.ranking li a em img {
+    display: none;
+}
+
+.ranking li a i {
+    display: block;
+    width: 200px;
+    height: 32px;
+    float: left;
+    font-size: 12px;
+    color: #696969;
+    text-align: left;
+    float: left;
+    overflow: hidden;
+}
+
+.ranking li a b {
+    height: 21px;
+    float: left;
+    line-height: 21px;
+    overflow: hidden;
+}
+
+.ranking li .rankingcur {
+    height: 53px;
+    background: #27A6E4;
+    line-height: 53px;
+    cursor: pointer;
+}
+
+.ranking li .rankingcur em {
+    display: none;
+}
+
+.ranking li .rankingcur .rankimg {
+    display: block;
+    width: 47px;
+    height: 47px;
+    padding: 6px 0 0 6px;
+}
+
+.ranking li .rankingcur .rankimg img {
+    display: block;
+    height: 41px;
+    width: 41px;
+}
+
+.ranking li .rankingcur i {
+    color: #ffffff;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.ranking li .rankingcur b {
+    display: block;
+    color: #45555A;
+    font-size: 12px;
+    text-align: left;
+}
+
+.join img {
+    margin-top: 12px;
+    display: block;
+}
+
+.mainContentThree {
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.mainThreeCon {
+    height: auto;
+    overflow: hidden;
+}
+
+.ThreeLeft {
+    width: 198px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-top: 10px;
+    border: 1px solid #d3d3d4;
+}
+
+.ThreeLeft h3 {
+    width: 189px;
+    border: 1px solid #fff;
+    background: #f3f3f3;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.ThreeLeft h3 img {
+    position: absolute;
+    left: 47px;
+    top: 10px;
+}
+
+.ThreeLeft .shopTop {
+    overflow: hidden;
+    border-top: 1px solid #e3e3e4;
+}
+
+.ThreeLeft .shopTop ul {
+    border-bottom: 1px dashed #aeaeae;
+}
+
+.ThreeLeft ul {
+    width: 185px;
+    margin-left: 7px;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.ThreeLeft ul li {
+    width: 185px;
+    margin-left: 3px;
+    margin-top: 7px;
+    overflow: hidden;
+    *margin-top: 5px;
+    _margin-top: 9px;
+}
+
+.ThreeLeft .shopTop ul li {
+    _margin-left: 9px;
+}
+
+/* for IE6 */
+
+.ThreeLeft ul li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    background: #fff;
+    float: left;
+}
+
+.ThreeLeft ul li .shopInfo {
+    float: left;
+    margin-left: 7px;
+    line-height: 22px;
+    color: #919191;
+}
+
+.ThreeLeft ul li .shopInfo h2 {
+    display: inline;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px;
+}
+
+.ThreeLeft ul li .shopInfo span {
+    display: block;
+}
+
+.ThreeLeft ul li .shopInfo em {
+    display: inline-block;
+    width: 11px;
+    height: 9px;
+    background: url(../images/zuan.png) no-repeat;
+    margin-left: 2px;
+}
+
+.ThreeLeft ul li .shopInfo i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/zuan.png) no-repeat 0 -11px;
+    margin-left: 2px;
+}
+
+.ThreeMiddle {
+    width: 468px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid #d3d3d4;
+    margin-top: 10px;
+}
+
+.ThreeMiddle h3 {
+    width: 459px;
+    border: 1px solid #fff;
+    background: #f3f3f3;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.ThreeMiddle h3 img {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
+
+.ThreeMiddle ul {
+    width: 468px;
+    overflow: hidden;
+    padding-bottom: 8px;
+    border-top: 1px solid #e3e3e4;
+}
+
+.ThreeMiddle ul li {
+    width: 140px;
+    margin: 7px 0px 0px 12px;
+    float: left;
+}
+
+.ThreeMiddle ul li a {
+    display: block;
+    width: 120px;
+    height: 80px;
+    padding: 7px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+}
+
+.ThreeMiddle ul li p {
+    width: 136px;
+    line-height: 22px;
+    color: #bdbdbd;
+}
+
+.ThreeMiddle ul li h4 {
+    line-height: 22px;
+    color: #454545;
+}
+
+.ThreeRight {
+    width: 258px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #d3d3d4;
+    position: relative;
+}
+
+.ThreeRight h3 {
+    width: 256px;
+    border: 1px solid #fff;
+    background: #f3f3f3;
+    font-size: 15px;
+    color: #252525;
+    line-height: 26px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.ThreeRight h3 img {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+}
+
+.ThreeRight ul {
+    width: 258px;
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+
+.ThreeRight ul li {
+    width: 57px;
+    height: auto;
+    float: left;
+    margin: 13px 0px 0px 6px;
+}
+
+.ThreeRight ul li a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    padding: 2px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+}
+
+.ThreeRight .more {
+    width: 18px;
+    height: 10px;
+    background: url(../images/mainLitile2.jpg) no-repeat 0 -34px;
+    position: absolute;
+    bottom: 14px;
+    right: 12px;
+}
+
+.ThreeBottom {
+    width: 948px;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.ThreeBottom ul {
+    width: 932px;
+    padding: 19px 0px 0px 16px;
+    overflow: hidden;
+}
+
+.ThreeBottom ul li {
+    margin-bottom: 14px;
+    color: #848484;
+    overflow: hidden;
+}
+
+.ThreeBottom ul li .team {
+    padding-left: 6px;
+    background: #e9e9e9;
+    line-height: 17px;
+    width: 100px;
+    font-size: 13px;
+    color: #767574;
+    float: left;
+}
+
+.ThreeBottom ul li .team span {
+    display: inline-block;
+    width: 3px;
+    height: 5px;
+    overflow: hidden;
+    background: url(../images/zuan.png) no-repeat 0 -27px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+}
+
+.ThreeBottom ul li .teamInfo {
+    width: 750px;
+    float: left;
+    margin-left: 12px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.footer {
+    padding: 7px 4px 76px 4px;
+    line-height: 25px;
+    text-align: center;
+    color: #404040;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #3266ca;
+}
+
+.footer a:hover {
+    color: #f60;
+}
+
+.footer ul {
+    display: inline-block;
+}
+
+.footer ul li {
+    float: left;
+    margin: 0px 9px;
+}
+
+.bottom {
+    margin: 0 auto;
+    width: 500px;
+    overflow: hidden;
+}
+
+.bottom img {
+    float: left;
+}
+
+.bottom .bottomPicMiddle {
+    float: left;
+}
+
+.bottom .bottomPicMiddle p {
+    line-height: 20px;
+    color: #000;
+}
+
+.bottom .bottomPicLeft {
+    width: 135px;
+    float: left;
+}
+
+.bottom .bottomPicRight {
+    width: 110px;
+    float: left;
+}
